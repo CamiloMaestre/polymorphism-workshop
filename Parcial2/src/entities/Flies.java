@@ -13,15 +13,13 @@ public class Flies {
     private double basePrice;
     private String statusFly;
 
-    public Flies(String codeFly, String cityOrigin, String cityDestination, String dateFly, String hourDeparture, String hourArrive, long capacity, int seatsAvailable, double basePrice, String statusFly) {
+    public Flies(String codeFly, String cityOrigin, String cityDestination, String dateFly, String hourDeparture, String hourArrive, double basePrice, String statusFly) {
         this.codeFly = codeFly;
         this.cityOrigin = cityOrigin;
         this.cityDestination = cityDestination;
         this.dateFly = dateFly;
         this.hourDeparture = hourDeparture;
         this.hourArrive = hourArrive;
-        this.capacity = capacity;
-        this.seatsAvailable = seatsAvailable;
         this.basePrice = basePrice;
         this.statusFly = statusFly;
     }

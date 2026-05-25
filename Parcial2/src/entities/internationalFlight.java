@@ -6,7 +6,7 @@ public class internationalFlight extends Flies {
     private double internationalCharge;
 
     public internationalFlight(String codeFly, String cityOrigin, String cityDestination, String dateFly, String hourDeparture, String hourArrive, long capacity, int seatsAvailable, double basePrice, String statusFly, String countryDestination, boolean includesVisa, double internationalCharge) {
-        super(codeFly, cityOrigin, cityDestination, dateFly, hourDeparture, hourArrive, capacity, seatsAvailable, basePrice, statusFly);
+        super(codeFly, cityOrigin, cityDestination, dateFly, hourDeparture, hourArrive, seatsAvailable, basePrice, statusFly);
         this.countryDestination = countryDestination;
         this.includesVisa = includesVisa;
         this.internationalCharge = internationalCharge;

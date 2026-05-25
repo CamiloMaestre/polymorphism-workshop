@@ -106,10 +106,7 @@ public class Main {
         boolean visa = sc.nextBoolean();
         String status = "Disponible ";
 
-
-
-
-        Flies f= new Flies(codeFly,capacity,status,visa,priceticket,hourArrive,hourDeperature,dateFly,cityDestination,cityOrigin);
+        Flies f= new Flies(codeFly,cityOrigin,cityDestination,dateFly,hourDeperature,hourArrive,priceticket,status);
         serviF.saveData(f);
 
 

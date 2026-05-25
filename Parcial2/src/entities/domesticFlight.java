@@ -6,7 +6,7 @@ public class domesticFlight extends Flies{
     private String includesFood;
 
     public domesticFlight(String codeFly, String cityOrigin, String cityDestination, String dateFly, String hourDeparture, String hourArrive, long capacity, int seatsAvailable, double basePrice, String statusFly, double estimatedDuration, String includesFood) {
-        super(codeFly, cityOrigin, cityDestination, dateFly, hourDeparture, hourArrive, capacity, seatsAvailable, basePrice, statusFly);
+        super(codeFly, cityOrigin, cityDestination, dateFly, hourDeparture, hourArrive, seatsAvailable, basePrice, statusFly);
         this.estimatedDuration = estimatedDuration;
         this.includesFood = includesFood;
     }
