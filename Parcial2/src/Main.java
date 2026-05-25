@@ -106,7 +106,9 @@ public class Main {
         boolean visa = sc.nextBoolean();
 
 
-        Flies f= new Flies();
+
+
+        Flies f= new Flies(codeFly,capacity,);
         serviF.saveData(f);
 
 
