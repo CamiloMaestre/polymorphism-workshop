@@ -39,7 +39,7 @@ public class Main {
                     break;
 
                 case 3:
-
+                    regisBooking(sc,serviB);
                     break;
 
                 case 4:
@@ -105,17 +105,14 @@ public class Main {
         System.out.println("requiere visa ?(true/false)");
         boolean visa = sc.nextBoolean();
         String status = "Disponible ";
-<<<<<<< Updated upstream
+
 
         Flies f= new Flies(codeFly,cityOrigin,cityDestination,dateFly,hourDeperature,hourArrive,priceticket,status);
-=======
-        Flies f= new Flies(codeFly,capacity,status,visa,priceticket,hourArrive,hourDeperature,dateFly,cityDestination,cityOrigin);
->>>>>>> Stashed changes
         serviF.saveData(f);
     }
 
-    static void booking(Scanner sc,BookingService serviB){
-
+    static void regisBooking(Scanner sc,BookingService serviB){
+        
     }
 
 
