@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da483a0-3434-4bee-b51d-633fdb06b33c" name="Changes" comment="" />
+    <list default="true" id="3da483a0-3434-4bee-b51d-633fdb06b33c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Parcial2/src/entities/domesticFlight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Parcial2/src/entities/internationalFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parcial2/src/entities/Flies.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parcial2/src/entities/Flies.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,13 @@
     <persistenceIdMap>
       <entry key="_C:/Users/camil/OneDrive/Documentos/GitHub/polymorphism-workshop" value="3EETHo2JkcdjdKLOVfq4p36SKUI" />
     </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
