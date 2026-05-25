@@ -65,8 +65,22 @@ public class Flies {
         return priceticket;
     }
 
+<<<<<<< Updated upstream
     public void setPriceticket(double priceticket) {
         this.priceticket = priceticket;
+=======
+    public void setHourDeparture(String hourDeparture) {
+        this.hourDeparture = hourDeparture;
+    }
+
+    public String getHourArrive() {
+        return hourArrive;
+    }
+
+<<<<<<< HEAD
+    public void setHourArrive(String hourArrive) {
+        this.hourArrive = hourArrive;
+>>>>>>> Stashed changes
     }
 
     public long getCapacity() {
@@ -101,6 +115,7 @@ public class Flies {
         this.dateFly = dateFly;
     }
 
+<<<<<<< Updated upstream
     public String getCityDestination() {
         return cityDestination;
     }
@@ -127,6 +142,10 @@ public class Flies {
 
 
 
+=======
+=======
+>>>>>>> 97c745d102a1e0db7b692fcafc20134be4cbc7cd
+>>>>>>> Stashed changes
     @Override
     public String toString() {
         return "Flies{" +
@@ -137,8 +156,19 @@ public class Flies {
                 ", hourDeparture='" + hourDeparture + '\'' +
                 ", hourArrive='" + hourArrive + '\'' +
                 ", capacity=" + capacity +
+<<<<<<< Updated upstream
                 ", priceticket=" + priceticket +
                 ", visa=" + visa +
+=======
+<<<<<<< HEAD
+                ", seatsAvailable=" + seatsAvailable +
+                ", basePrice=" + basePrice +
+=======
+                ", priceticket=" + priceticket +
+                ", visa=" + visa +
+                ", InternacionalCharge=" + InternacionalCharge +
+>>>>>>> 97c745d102a1e0db7b692fcafc20134be4cbc7cd
+>>>>>>> Stashed changes
                 ", statusFly='" + statusFly + '\'' +
                 ", capacitySeats=" + capacitySeats +
                 '}';
