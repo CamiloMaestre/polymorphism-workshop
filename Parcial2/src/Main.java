@@ -91,7 +91,7 @@ public class Main {
         System.out.println("ingrese la ciudad de origen");
         String cityOrigin= sc.nextLine();
         System.out.println("ingrese la ciudad de destino");
-        String CityDestination= sc.nextLine();
+        String cityDestination= sc.nextLine();
         System.out.println("ingrese la fecha de vuelo");
         String dateFly= sc.nextLine();
         System.out.println("ingrese la hora de salida");
@@ -104,11 +104,12 @@ public class Main {
         double priceticket= sc.nextDouble();
         System.out.println("requiere visa ?");
         boolean visa = sc.nextBoolean();
+        boolean status = true;
 
 
 
 
-        Flies f= new Flies(codeFly,capacity,);
+        Flies f= new Flies(codeFly,capacity,status,visa,priceticket,hourArrive,hourDeperature,dateFly,cityDestination,cityOrigin);
         serviF.saveData(f);
 
 

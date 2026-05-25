@@ -16,13 +16,12 @@ public class Flies {
     private long capacitySeats;
 
 
-    public Flies(String codeFly, long capacitySeats, String statusFly, boolean visa, double priceticket, long capacity, String hourArrive, String hourDeparture, String dateFly, String cityDestination, String cityOrigin) {
+    public Flies(String codeFly, long capacitySeats, String statusFly, boolean visa, double priceticket, String hourArrive, String hourDeparture, String dateFly, String cityDestination, String cityOrigin) {
         this.codeFly = codeFly;
         this.capacitySeats = capacitySeats;
         this.statusFly = statusFly;
         this.visa = visa;
         this.priceticket = priceticket;
-        this.capacity = capacity;
         this.hourArrive = hourArrive;
         this.hourDeparture = hourDeparture;
         this.dateFly = dateFly;
