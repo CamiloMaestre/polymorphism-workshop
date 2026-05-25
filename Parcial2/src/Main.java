@@ -104,7 +104,7 @@ public class Main {
         double priceticket= sc.nextDouble();
         System.out.println("requiere visa ?");
         boolean visa = sc.nextBoolean();
-        boolean status = true;
+        String status = "Disponible ";
 
 
 
