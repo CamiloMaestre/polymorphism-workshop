@@ -5,8 +5,8 @@ public class internationalFlight extends Flies {
     private boolean includesVisa;
     private double internationalCharge;
 
-    public internationalFlight(String codeFly, String cityOrigin, String cityDestination, String dateFly, String hourDeparture, String hourArrive, long capacity, int seatsAvailable, double basePrice, String statusFly, String countryDestination, boolean includesVisa, double internationalCharge) {
-        super(codeFly, cityOrigin, cityDestination, dateFly, hourDeparture, hourArrive, seatsAvailable, basePrice, statusFly);
+    public internationalFlight(String codeFly, String cityOrigin, String cityDestination, String dateFly, String hourDeparture, String hourArrive, double basePrice, String statusFly, String countryDestination, boolean includesVisa, double internationalCharge) {
+        super(codeFly, cityOrigin, cityDestination, dateFly, hourDeparture, hourArrive, basePrice, statusFly);
         this.countryDestination = countryDestination;
         this.includesVisa = includesVisa;
         this.internationalCharge = internationalCharge;
