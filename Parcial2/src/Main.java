@@ -35,7 +35,7 @@ public class Main {
                     break;
 
                 case 2:
-
+                    regisFlies(sc,serviF);
                     break;
 
                 case 3:
