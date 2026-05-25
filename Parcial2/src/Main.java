@@ -35,7 +35,7 @@ public class Main {
                     break;
 
                 case 2:
-
+                    regisFlies(sc,serviF);
                     break;
 
                 case 3:
@@ -102,9 +102,9 @@ public class Main {
         long capacity = sc.nextLong();
         System.out.println("ingrese el precio del tiquete ");
         double priceticket= sc.nextDouble();
-        System.out.println("requiere visa ?");
+        System.out.println("requiere visa ?(true/false)");
         boolean visa = sc.nextBoolean();
-        boolean status = true;
+        String status = "Disponible ";
 
 
 
