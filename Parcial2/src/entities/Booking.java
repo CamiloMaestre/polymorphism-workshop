@@ -7,16 +7,20 @@ public class Booking {
     private int SeatsNumberBooked;
     private String dateBooking;
     private String statusBooking;
+    private double totalPrice;
 
 
-    public Booking(long codeBooking, String passengerBooking, long codeBookedFlight, int seatsNumberBooked, String dateBooking, String statusBooking) {
+    public Booking(long codeBooking, String passengerBooking, long codeBookedFlight, int seatsNumberBooked, String dateBooking, String statusBooking, double totalPrice) {
         this.codeBooking = codeBooking;
         this.passengerBooking = passengerBooking;
         this.codeBookedFlight = codeBookedFlight;
         SeatsNumberBooked = seatsNumberBooked;
         this.dateBooking = dateBooking;
         this.statusBooking = statusBooking;
+        this.totalPrice = totalPrice;
     }
+
+
 
     public long getCodeBooking() {
         return codeBooking;
@@ -66,6 +70,14 @@ public class Booking {
         this.statusBooking = statusBooking;
     }
 
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
     @Override
     public String toString() {
         return "Booking{" +
@@ -75,6 +87,7 @@ public class Booking {
                 ", SeatsNumberBooked=" + SeatsNumberBooked +
                 ", dateBooking='" + dateBooking + '\'' +
                 ", statusBooking='" + statusBooking + '\'' +
+                ", totalPrice=" + totalPrice +
                 '}';
     }
 }

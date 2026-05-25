@@ -9,24 +9,22 @@ public class Flies {
     private String hourDeparture;
     private String hourArrive;
     private long capacity;
-    private double priceticket;
-    private boolean visa;
-    private long InternacionalCharge;
+    private int seatsAvailable;
+    private double basePrice;
     private String statusFly;
-    private long capacitySeats;
 
 
-    public Flies(String codeFly, long capacitySeats, String statusFly, boolean visa, double priceticket, String hourArrive, String hourDeparture, String dateFly, String cityDestination, String cityOrigin) {
+    public Flies(String codeFly, String cityOrigin, String cityDestination, String dateFly, String hourDeparture, String hourArrive, long capacity, int seatsAvailable, double basePrice, String statusFly) {
         this.codeFly = codeFly;
-        this.capacitySeats = capacitySeats;
-        this.statusFly = statusFly;
-        this.visa = visa;
-        this.priceticket = priceticket;
-        this.hourArrive = hourArrive;
-        this.hourDeparture = hourDeparture;
-        this.dateFly = dateFly;
-        this.cityDestination = cityDestination;
         this.cityOrigin = cityOrigin;
+        this.cityDestination = cityDestination;
+        this.dateFly = dateFly;
+        this.hourDeparture = hourDeparture;
+        this.hourArrive = hourArrive;
+        this.capacity = capacity;
+        this.seatsAvailable = seatsAvailable;
+        this.basePrice = basePrice;
+        this.statusFly = statusFly;
     }
 
     public String getCodeFly() {
@@ -37,68 +35,12 @@ public class Flies {
         this.codeFly = codeFly;
     }
 
-    public long getCapacitySeats() {
-        return capacitySeats;
+    public String getCityOrigin() {
+        return cityOrigin;
     }
 
-    public void setCapacitySeats(long capacitySeats) {
-        this.capacitySeats = capacitySeats;
-    }
-
-    public String getStatusFly() {
-        return statusFly;
-    }
-
-    public void setStatusFly(String statusFly) {
-        this.statusFly = statusFly;
-    }
-
-    public boolean isVisa() {
-        return visa;
-    }
-
-    public void setVisa(boolean visa) {
-        this.visa = visa;
-    }
-
-    public double getPriceticket() {
-        return priceticket;
-    }
-
-    public void setPriceticket(double priceticket) {
-        this.priceticket = priceticket;
-    }
-
-    public long getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(long capacity) {
-        this.capacity = capacity;
-    }
-
-    public String getHourArrive() {
-        return hourArrive;
-    }
-
-    public void setHourArrive(String hourArrive) {
-        this.hourArrive = hourArrive;
-    }
-
-    public String getHourDeparture() {
-        return hourDeparture;
-    }
-
-    public void setHourDeparture(String hourDeparture) {
-        this.hourDeparture = hourDeparture;
-    }
-
-    public String getDateFly() {
-        return dateFly;
-    }
-
-    public void setDateFly(String dateFly) {
-        this.dateFly = dateFly;
+    public void setCityOrigin(String cityOrigin) {
+        this.cityOrigin = cityOrigin;
     }
 
     public String getCityDestination() {
@@ -109,23 +51,61 @@ public class Flies {
         this.cityDestination = cityDestination;
     }
 
-    public String getCityOrigin() {
-        return cityOrigin;
+    public String getDateFly() {
+        return dateFly;
     }
 
-    public void setCityOrigin(String cityOrigin) {
-        this.cityOrigin = cityOrigin;
+    public void setDateFly(String dateFly) {
+        this.dateFly = dateFly;
     }
 
-    public long getInternacionalCharge() {
-        return InternacionalCharge;
+    public String getHourDeparture() {
+        return hourDeparture;
     }
 
-    public void setInternacionalCharge(long internacionalCharge) {
-        InternacionalCharge = internacionalCharge;
+    public void setHourDeparture(String hourDeparture) {
+        this.hourDeparture = hourDeparture;
     }
 
+    public String getHourArrive() {
+        return hourArrive;
+    }
 
+    public void setHourArrive(String hourArrive) {
+        this.hourArrive = hourArrive;
+    }
+
+    public long getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(long capacity) {
+        this.capacity = capacity;
+    }
+
+    public int getSeatsAvailable() {
+        return seatsAvailable;
+    }
+
+    public void setSeatsAvailable(int seatsAvailable) {
+        this.seatsAvailable = seatsAvailable;
+    }
+
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    public String getStatusFly() {
+        return statusFly;
+    }
+
+    public void setStatusFly(String statusFly) {
+        this.statusFly = statusFly;
+    }
 
     @Override
     public String toString() {
@@ -137,10 +117,9 @@ public class Flies {
                 ", hourDeparture='" + hourDeparture + '\'' +
                 ", hourArrive='" + hourArrive + '\'' +
                 ", capacity=" + capacity +
-                ", priceticket=" + priceticket +
-                ", visa=" + visa +
+                ", seatsAvailable=" + seatsAvailable +
+                ", basePrice=" + basePrice +
                 ", statusFly='" + statusFly + '\'' +
-                ", capacitySeats=" + capacitySeats +
                 '}';
     }
 }
