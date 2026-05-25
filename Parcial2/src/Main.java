@@ -102,7 +102,7 @@ public class Main {
         long capacity = sc.nextLong();
         System.out.println("ingrese el precio del tiquete ");
         double priceticket= sc.nextDouble();
-        System.out.println("requiere visa ?");
+        System.out.println("requiere visa ?(true/false)");
         boolean visa = sc.nextBoolean();
         String status = "Disponible ";
 

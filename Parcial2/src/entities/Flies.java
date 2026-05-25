@@ -126,7 +126,6 @@ public class Flies {
     }
 
 
-
     @Override
     public String toString() {
         return "Flies{" +
@@ -139,6 +138,7 @@ public class Flies {
                 ", capacity=" + capacity +
                 ", priceticket=" + priceticket +
                 ", visa=" + visa +
+                ", InternacionalCharge=" + InternacionalCharge +
                 ", statusFly='" + statusFly + '\'' +
                 ", capacitySeats=" + capacitySeats +
                 '}';

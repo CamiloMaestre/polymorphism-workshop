@@ -14,7 +14,7 @@ public class FliesService {
             System.out.println("el pasajero ya existe");
             return;
         }
-        if(f.getCapacity()<0){
+        if(f.getCapacitySeats()<0){
             System.out.println("la capacidad no puede ser negativa");
             return;
         }
