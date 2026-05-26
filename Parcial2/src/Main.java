@@ -155,10 +155,8 @@ public class Main {
             System.out.println("ingrese la fecha de reservacion:");
             String dateBooking = sc.nextLine();
 
-            long flightCodeLong = Long.parseLong(codeFlyStr);
-
             Booking b = new Booking(bookingCode, id, amountSeat, dateBooking, "confirmado", tipeFlies);
-            b.setCodeBookedFlight(flightCodeLong);
+            b.setCodeBookedFlight(codeFlyStr);
             serviB.saveData(b);
         } catch (NumberFormatException e) {
             System.out.println("[ERROR] Se ingresó un carácter no válido en los campos numéricos.");

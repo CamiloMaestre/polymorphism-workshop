@@ -3,7 +3,7 @@ package entities;
 public class Booking {
     private String codeBooking;
     private long passengerBooking;
-    private long codeBookedFlight;
+    private String codeBookedFlight;
     private int SeatsNumberBooked;
     private String dateBooking;
     private String statusBooking;
@@ -59,11 +59,11 @@ public class Booking {
         SeatsNumberBooked = seatsNumberBooked;
     }
 
-    public long getCodeBookedFlight() {
+    public String getCodeBookedFlight() {
         return codeBookedFlight;
     }
 
-    public void setCodeBookedFlight(long codeBookedFlight) {
+    public void setCodeBookedFlight(String codeBookedFlight) {
         this.codeBookedFlight = codeBookedFlight;
     }
 

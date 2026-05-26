@@ -29,6 +29,10 @@ public class BookingService {
             System.out.println("el pasajero no existe");
             return;
         }
+        if(repoF.Getflies(b.getCodeBookedFlight()) == null){
+            System.out.println("el vuelo no existe, no se puede registrar la reserva");
+            return;
+        }
         if(b.getTipeFly()<0 || b.getTipeFly()>1){
             System.out.println("opcion invalida");
             return;
