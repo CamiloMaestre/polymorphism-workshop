@@ -2,20 +2,21 @@ package entities;
 
 public class Booking {
     private String codeBooking;
-    private String passengerBooking;
+    private long passengerBooking;
     private long codeBookedFlight;
     private int SeatsNumberBooked;
     private String dateBooking;
     private String statusBooking;
+    private int tipeFly;
 
 
-    public Booking(String codeBooking, String passengerBooking, long codeBookedFlight, int seatsNumberBooked, String dateBooking, String statusBooking) {
+    public Booking(String codeBooking, long passengerBooking, int seatsNumberBooked, String dateBooking, String statusBooking, int tipeFly) {
         this.codeBooking = codeBooking;
         this.passengerBooking = passengerBooking;
-        this.codeBookedFlight = codeBookedFlight;
         SeatsNumberBooked = seatsNumberBooked;
         this.dateBooking = dateBooking;
         this.statusBooking = statusBooking;
+        this.tipeFly = tipeFly;
     }
 
     public String getCodeBooking() {
@@ -26,36 +27,12 @@ public class Booking {
         this.codeBooking = codeBooking;
     }
 
-    public String getPassengerBooking() {
-        return passengerBooking;
+    public int getTipeFly() {
+        return tipeFly;
     }
 
-    public void setPassengerBooking(String passengerBooking) {
-        this.passengerBooking = passengerBooking;
-    }
-
-    public long getCodeBookedFlight() {
-        return codeBookedFlight;
-    }
-
-    public void setCodeBookedFlight(long codeBookedFlight) {
-        this.codeBookedFlight = codeBookedFlight;
-    }
-
-    public int getSeatsNumberBooked() {
-        return SeatsNumberBooked;
-    }
-
-    public void setSeatsNumberBooked(int seatsNumberBooked) {
-        SeatsNumberBooked = seatsNumberBooked;
-    }
-
-    public String getDateBooking() {
-        return dateBooking;
-    }
-
-    public void setDateBooking(String dateBooking) {
-        this.dateBooking = dateBooking;
+    public void setTipeFly(int tipeFly) {
+        this.tipeFly = tipeFly;
     }
 
     public String getStatusBooking() {
@@ -66,15 +43,48 @@ public class Booking {
         this.statusBooking = statusBooking;
     }
 
+    public String getDateBooking() {
+        return dateBooking;
+    }
+
+    public void setDateBooking(String dateBooking) {
+        this.dateBooking = dateBooking;
+    }
+
+    public int getSeatsNumberBooked() {
+        return SeatsNumberBooked;
+    }
+
+    public void setSeatsNumberBooked(int seatsNumberBooked) {
+        SeatsNumberBooked = seatsNumberBooked;
+    }
+
+    public long getCodeBookedFlight() {
+        return codeBookedFlight;
+    }
+
+    public void setCodeBookedFlight(long codeBookedFlight) {
+        this.codeBookedFlight = codeBookedFlight;
+    }
+
+    public long getPassengerBooking() {
+        return passengerBooking;
+    }
+
+    public void setPassengerBooking(long passengerBooking) {
+        this.passengerBooking = passengerBooking;
+    }
+
     @Override
     public String toString() {
         return "Booking{" +
-                "codeBooking=" + codeBooking +
-                ", passengerBooking='" + passengerBooking + '\'' +
+                "codeBooking='" + codeBooking + '\'' +
+                ", passengerBooking=" + passengerBooking +
                 ", codeBookedFlight=" + codeBookedFlight +
                 ", SeatsNumberBooked=" + SeatsNumberBooked +
                 ", dateBooking='" + dateBooking + '\'' +
                 ", statusBooking='" + statusBooking + '\'' +
+                ", tipeFly=" + tipeFly +
                 '}';
     }
 }

@@ -1,3 +1,4 @@
+import entities.Booking;
 import entities.Flies;
 import entities.Passengers;
 import repository.PassengerRepository;
@@ -14,6 +15,7 @@ public class Main {
         PassangerService serviP = new PassangerService();
         FliesService serviF = new FliesService();
         BookingService serviB = new BookingService();
+
 
         Scanner sc= new Scanner(System.in);
         int option;
@@ -39,7 +41,7 @@ public class Main {
                     break;
 
                 case 3:
-                    regisBooking(sc,serviB);
+                    regisBooking(sc,serviB,serviF);
                     break;
 
                 case 4:
@@ -110,9 +112,31 @@ public class Main {
         Flies f= new Flies(codeFly,cityOrigin,cityDestination,dateFly,hourDeperature,hourArrive,priceticket,status);
         serviF.saveData(f);
     }
-
-    static void regisBooking(Scanner sc,BookingService serviB){
-        
+    static void regisBooking(Scanner sc, BookingService serviB, FliesService serviF){
+        System.out.println("ingrese la cedula del pasajero: ");
+        long id = sc.nextLong();
+        sc.nextLine();
+        System.out.println("ingrese un codigo de reserva");
+        String bookingCode = sc.nextLine();
+        System.out.println("escoga tipo de vuelo:");
+        System.out.println("0.nacional");
+        System.out.println("1.internacional");
+        int tipeFlies = sc.nextInt();
+        sc.nextLine();
+        System.out.println("ingrese el codigo del vuelo a reservar:");
+        String codeFly = sc.nextLine();
+        Flies fly = serviF.findByCode(codeFly);
+        double priceticket = fly.getBasePrice();
+        System.out.println("ingrese la cantidad de asientos a reservar: min 1, max 5");
+        int amountSeat = sc.nextInt();
+        sc.nextLine();
+        double totalPrice = priceticket * amountSeat;
+        System.out.println("ingrese la fecha de reservacion");
+        String dateBooking = sc.nextLine();
+        System.out.println("Precio total: " + totalPrice);
+        String statusBooking= "confirmado";
+        Booking b = new Booking(bookingCode,id,amountSeat,dateBooking,statusBooking,tipeFlies);
+        serviB.saveData(b);
     }
 
 

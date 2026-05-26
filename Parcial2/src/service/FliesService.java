@@ -14,15 +14,18 @@ public class FliesService {
             System.out.println("el pasajero ya existe");
             return;
         }
-        if(f.getCapacitySeats()<0){
+        if(f.getSeatsAvailable()<0){
             System.out.println("la capacidad no puede ser negativa");
             return;
         }
-        if(f.getPriceticket()<0){
+        if(f.getBasePrice()<0){
             System.out.println("el precio no puede ser negativo");
             return;
         }
         repo.fliesSave(f);
+    }
+    public Flies findByCode(String code) {
+       return repo.Getflies(code);
     }
 
 
