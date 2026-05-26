@@ -26,4 +26,12 @@ public class BookingRepository {
         }
         return null;
     }
+    public void updateBooking(Booking b){
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i).getCodeBooking().equals(b.getCodeBooking())){
+                list.set(i, b);
+                break;
+            }
+        }
+    }
 }

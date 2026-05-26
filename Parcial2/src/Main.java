@@ -157,4 +157,18 @@ public class Main {
         b.setCodeBookedFlight(flightCodeLong);
         serviB.saveData(b);
     }
+    static void cancelBooking(Scanner sc, BookingService serviB){
+        System.out.println("ingrese el codigo de la reserva a cancelar:");
+        String cancelB = sc.nextLine();
+
+        Booking b = serviB.cancel(cancelB);
+
+        if(b != null){
+            b.setStatusBooking("Cancelado");
+            serviB.updateBooking(b);
+            System.out.println("Reserva cancelada exitosamente");
+        } else {
+            System.out.println("No se encontró la reserva");
+        }
+    }
 }

@@ -53,5 +53,12 @@ public class BookingService {
 
         repo.BookingSave(b);
     }
+    public Booking cancel(String codeB){
+        Booking b = repo.GetBooking(codeB);
+        return b;
+    }
+    public void updateBooking(Booking b){
+        repo.updateBooking(b);
+    }
 
 }
