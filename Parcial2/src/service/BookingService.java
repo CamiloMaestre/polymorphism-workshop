@@ -39,6 +39,13 @@ public class BookingService {
         }
         Flies flight = repoF.Getflies(String.valueOf(b.getCodeBookedFlight()));
 
+        if (flight == null) {
+            System.out.println("\n[ERROR] El código de vuelo '" + b.getCodeBookedFlight() + "' no existe en el sistema.");
+            System.out.println("-> NOTA: Si usaste letras en el código del vuelo (ej: AV101), recuerda que el sistema actual");
+            System.out.println("   lo convierte a número. Intenta registrar y reservar usando SOLO números (ej: 1234).");
+            return;
+        }
+
         double pricePerSeat = flight.calculatefinalPrice();
         double totalPrice = pricePerSeat * b.getSeatsNumberBooked();
         System.out.println("\n=========================================");
