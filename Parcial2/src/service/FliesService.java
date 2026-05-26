@@ -22,6 +22,7 @@ public class FliesService {
             System.out.println("el precio no puede ser negativo");
             return;
         }
+
         repo.fliesSave(f);
     }
     public Flies findByCode(String code) {

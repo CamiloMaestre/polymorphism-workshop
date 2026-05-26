@@ -138,6 +138,9 @@ public class Main {
         Booking b = new Booking(bookingCode,id,amountSeat,dateBooking,statusBooking,tipeFlies);
         serviB.saveData(b);
     }
+    static void cancelBooking(Scanner sc, BookingService serviB){
+
+    }
 
 
 
