@@ -9,6 +9,10 @@ public class PassangerService {
 
     private PassengerRepository repo= new PassengerRepository();
 
+    public PassangerService(PassengerRepository repo) {
+        this.repo = repo;
+    }
+
     public void saveData(Passengers p){
 
 
@@ -17,7 +21,7 @@ public class PassangerService {
             return;
         }
         if(repo.GetpassangersPasspor(p.getPassNumber()) != null){
-            System.out.println("el pasajero ya existe");
+            System.out.println("el # de pasajero ya existe");
             return;
         }
         if(p.getAge()<0){
@@ -33,6 +37,9 @@ public class PassangerService {
 
     }
 
+    public int totalPassengers(){
+        return repo.listAll().size();
+    }
 
 
 }

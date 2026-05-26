@@ -1,6 +1,6 @@
 package entities;
 
-public class Flies {
+public abstract class Flies {
 
     private String codeFly;
     private String cityOrigin;
@@ -119,4 +119,5 @@ public class Flies {
                 ", statusFly='" + statusFly + '\'' +
                 '}';
     }
+    public abstract double calculatefinalPrice();
 }

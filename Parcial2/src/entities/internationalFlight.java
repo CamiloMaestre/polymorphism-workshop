@@ -35,4 +35,9 @@ public class internationalFlight extends Flies {
     public void setInternationalCharge(double internationalCharge) {
         this.internationalCharge = internationalCharge;
     }
+
+    @Override
+    public double calculatefinalPrice() {
+        return getBasePrice() + internationalCharge;
+    }
 }

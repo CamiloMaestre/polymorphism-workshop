@@ -26,4 +26,9 @@ public class domesticFlight extends Flies{
     public void setIncludesFood(String includesFood) {
         this.includesFood = includesFood;
     }
+
+    @Override
+    public double calculatefinalPrice() {
+        return getBasePrice();
+    }
 }
