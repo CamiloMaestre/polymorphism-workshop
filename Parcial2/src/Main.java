@@ -38,7 +38,7 @@ public class Main {
             try {
                 option = Integer.parseInt(sc.nextLine().trim());
             } catch (NumberFormatException e) {
-                option = -1; // Fuerza el default si meten letras
+                option = -1;
             }
 
             switch (option) {
